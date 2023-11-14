@@ -5,7 +5,7 @@
 ## DAFTAR ISI <br>
 | No | Description | Link |
 |-----|------|-----|
-|1|Instruksi Praktikum |[Click Here](#INSTRUKSIPRAKTIKUM)|
+|1|Instruksi Praktikum |[Click Here](#INSTRUKSI)|
 |2|Langkah-langkah Praktikum|[Click Here](##Langkah-langkahPraktikum)|
 |3|Konfigurasi Web Server|[Click Here](##KonfigurasiWebServer)|
 |4|Menjalankan Web Server|[Click Here](##MenjalankanWebServer)|
@@ -22,7 +22,7 @@
 |15|Perulangan dowhile|[Click Here](##Perulangandowhile)|
 |16|PERTANYAAN DAN TUGAS|[Click Here](##PERTANYAANDANTUGAS)|
 
-# INSTRUKSI PRAKTIKUM
+# INSTRUKSI
 1. Persiapkan text editor misalnya VSCode.
 2. Buat folder baru dengan nama lab7_php_dasar pada docroot webserver (htdocs)
 3. Ikuti langkah-langkah praktikum yang akan dijelaskan berikutnya.

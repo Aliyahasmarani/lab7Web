@@ -5,7 +5,7 @@
 ## DAFTAR ISI <br>
 | No | Description | Link |
 |-----|------|-----|
-|1|Instruksi Praktikum |[Click Here](##InstruksiPraktikum)|
+|1|Instruksi Praktikum |[Click Here](#InstruksiPraktikum)|
 |2|Langkah-langkah Praktikum|[Click Here](##Langkah-langkahPraktikum)|
 |3|Konfigurasi Web Server|[Click Here](##KonfigurasiWebServer)|
 |4|Menjalankan Web Server|[Click Here](##MenjalankanWebServer)|

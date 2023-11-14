@@ -361,4 +361,115 @@ nama, tanggal lahir dan pekerjaan. Kemudian tampilkan outputnya dengan menghitun
 umur berdasarkan inputan tanggal lahir. Dan pilihan pekerjaan dengan gaji yang
 berbeda-beda sesuai pilihan pekerjaan.
 
+### CODE:
 
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pekerjaan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+        }
+
+        .hasil {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Form Pekerjaan</h2>
+
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+        <label for="nama">Nama:</label>
+        <input type="text" name="nama" required>
+
+        <label for="tanggal_lahir">Tanggal Lahir:</label>
+        <input type="date" name="tanggal_lahir" required>
+
+        <label for="pekerjaan">Pekerjaan:</label>
+        <select name="pekerjaan" required>
+            <option value="Programmer">Programmer</option>
+            <option value="Designer">Designer</option>
+            <option value="Marketing">Marketing</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <?php
+    // Memproses form setelah pengguna mengirimkan data
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $nama = $_POST["nama"];
+        $tanggal_lahir = $_POST["tanggal_lahir"];
+        $pekerjaan = $_POST["pekerjaan"];
+
+        // Menghitung umur berdasarkan tanggal lahir
+        $umur = date_diff(date_create($tanggal_lahir), date_create('today'))->y;
+
+        // Menentukan gaji berdasarkan pekerjaan
+        switch ($pekerjaan) {
+            case 'Programmer':
+                $gaji = 5000000;
+                break;
+            case 'Designer':
+                $gaji = 4500000;
+                break;
+            case 'Marketing':
+                $gaji = 4000000;
+                break;
+            default:
+                $gaji = 0; // Gaji default jika pekerjaan tidak dikenali
+        }
+    ?>
+        <div class="hasil">
+            <h3>Hasil Input:</h3>
+            <p><strong>Nama:</strong> <?php echo $nama; ?></p>
+            <p><strong>Tanggal Lahir:</strong> <?php echo $tanggal_lahir; ?></p>
+            <p><strong>Umur:</strong> <?php echo $umur; ?> tahun</p>
+            <p><strong>Pekerjaan:</strong> <?php echo $pekerjaan; ?></p>
+            <p><strong>Gaji:</strong> Rp. <?php echo number_format($gaji, 0, ',', '.'); ?></p>
+        </div>
+    <?php
+    }
+    ?>
+</body>
+</html>
+```
+
+### OUTPUT 
+
+![image](https://github.com/Aliyahasmarani/lab7Web/assets/115197672/d867e2f8-b6b2-4c6d-892a-72c7b575c46d)
+
+![image](https://github.com/Aliyahasmarani/lab7Web/assets/115197672/55e3f41b-dbcb-417c-ac8a-f0fc501b8bf4)

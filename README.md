@@ -468,6 +468,8 @@ berbeda-beda sesuai pilihan pekerjaan.
 </html>
 ```
 
+![image](https://github.com/Aliyahasmarani/lab7Web/assets/115197672/0f05f6fe-e7ad-4301-b714-b50ab5d03854)
+
 ### OUTPUT 
 
 ![image](https://github.com/Aliyahasmarani/lab7Web/assets/115197672/d867e2f8-b6b2-4c6d-892a-72c7b575c46d)

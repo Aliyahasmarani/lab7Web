@@ -360,7 +360,7 @@ Jadi, hasil akhirnya adalah program akan menampilkan pesan "Perulangan ke: [nila
 
 ![image](https://github.com/Aliyahasmarani/lab7Web/assets/115197672/213c440f-b410-4975-ac5f-96c3c72754de)
 
-## PERTANYAAN DAN TUGAS
+# TUGAS
 
 Buatlah program PHP sederhana dengan menggunakan form input yang menampilkan
 nama, tanggal lahir dan pekerjaan. Kemudian tampilkan outputnya dengan menghitung

@@ -2,6 +2,26 @@
 
 # Praktikum 7: PHP Dasar
 
+## DAFTAR ISI <br>
+| No | Description | Link |
+|-----|------|-----|
+|1|Instruksi Praktikum |[Click Here](##InstruksiPraktikum)|
+|2|Langkah-langkah Praktikum|[Click Here](##Langkah-langkahPraktikum)|
+|3|Konfigurasi Web Server|[Click Here](##KonfigurasiWebServer)|
+|4|Menjalankan Web Server|[Click Here](##MenjalankanWebServer)|
+|5|Memulai PHP|[Click Here](##MemulaIPHP)|
+|6|PHP Dasar|[Click Here](##PHPDasar)|
+|7|Variable PHP|[Click Here](##VariablePHP)|
+|8|Predefine Variable $_GET|[Click Here](##PredefineVariable$_GET)|
+|9|Membuat Form Input|[Click Here](##MembuatFormInput)|
+|10|Operator|[Click Here](##Operator)|
+|11|Kondisi IF|[Click Here](##KondisiIF)|
+|12|Kondisi Switch|[Click Here](##KondisiSwitch)|
+|13|Perulangan for|[Click Here](##Perulanganfor)|
+|14|Perulangan while|[Click Here](##Perulanganwhile)|
+|15|Perulangan dowhile|[Click Here](##Perulangandowhile)|
+|16|PERTANYAAN DAN TUGAS|[Click Here](##PERTANYAANDANTUGAS)|
+
 ## Instruksi Praktikum 
 1. Persiapkan text editor misalnya VSCode.
 2. Buat folder baru dengan nama lab7_php_dasar pada docroot webserver (htdocs)
